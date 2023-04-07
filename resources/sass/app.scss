@@ -1,0 +1,104 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import 'flatpickr/dist/flatpickr.css';
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+@font-face {
+  font-family: PoetsenOne;
+  src: url('/custom-fonts/PoetsenOne-Regular.ttf');
+}
+@font-face {
+  font-family: BillionDreams;
+  src: url('/custom-fonts/BillionDreams.ttf');
+}
+@font-face {
+  font-family: SugarSnow;
+  src: url('/custom-fonts/SugarSnow.ttf');
+}
+
+body {
+  font: 10pt $font-stack;
+  color: $primary-color;
+  background-color: #f8f9f9;
+}
+.circle{
+  border-radius: 50%;
+}
+.navbar-brand-logo{
+  width: 4rem;
+  margin-right: 0.5rem;
+}
+#hero1{
+  background-color: #219121;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+#footer_cnt{
+  background-color: #FFF;
+  color: $primary-color;
+}
+.hero-banner-text{
+  margin-left:3rem;
+  margin-top: 4rem;
+}
+.hero-banner-text h1{
+  font-family: SugarSnow;
+  font-size: 3rem;
+}
+.hero-banner-text p{
+  font-size: 1.2rem;
+}
+.hero-img{
+  height: 400px;
+}
+.btn-register, .btn-join{
+  background-color: #feb73f;
+}
+.card-image{
+  max-width: 500px;
+}
+.card-image-detail{
+  width: 500px;
+}
+.card-img-container{
+  background-color: darkgrey;
+}
+.card-title a{
+  color: #333;
+  text-decoration: none;
+}
+.form-error-txt{
+  font-size: .75rem;
+}
+.total-registered-count{
+  width: 150px;
+  height: 150px;
+  padding:5px
+}
+.total-registered-count span{
+  font-size:6rem;
+  font-weight: 800;
+  color:white;
+}
+.icon-green{
+  color: green;
+}
+.icon-red{
+  color: red;
+}
+.schedule-status{
+  font-size: 1.1rem;
+}
+.status-icon-mr{
+  margin-right:0.5rem
+}
