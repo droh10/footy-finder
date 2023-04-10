@@ -1,8 +1,10 @@
 <?php
 
-use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\ScheduleController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\RegisterScheduleController;
 
 /*
@@ -25,4 +27,11 @@ Route::delete('/schedule/{schedule}', [ScheduleController::class, 'delete'])->na
 Route::post('/schedule/register/store/{schedule}', [RegisterScheduleController::class, 'store'])->name('schedule.register.player');
 //register
 Route::get('/register', [RegisterController::class, 'create'])->name('register.create');
-Route::post('/register/store', [RegistRegisterControllerer::class, 'store'])->name('register.store');
+Route::post('/register/store', [RegisterController::class, 'store'])->name('register.store');
+
+//user
+Route::get('/login', [LoginController::class, 'login'])->name('user.login');
+Route::post('/login/authenticate', [LoginController::class, 'authenticate'])->name('user.authenticate');
+Route::post('/logout', [LoginController::class, 'logout'])->name('user.logout');
+//dashboard
+Route::get('/dashboard', [DashboardController::class, 'view'])->name('dashboard');

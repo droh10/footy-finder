@@ -17,7 +17,7 @@
                         Register and join our growing community!
                     </p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn btn-warning font-weight-bold text-dark px-4 fs-5">Register</button>
+                        <a href="{{route('register.create')}}" class="btn btn-warning font-weight-bold text-dark px-4 fs-5">Register</a>
                     </div>
                 </div>
             </div>

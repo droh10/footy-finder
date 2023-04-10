@@ -48,4 +48,7 @@ class User extends Authenticatable
     public function schedulePlayers(){
         return $this->hasMany(SchedulePlayer::class);
     }
+    public function image(){
+        return $this->morphOne(Image::class, 'imageable');
+    }
 }

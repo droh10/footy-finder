@@ -14,3 +14,6 @@ window.initTimeInput = function(element){
       dateFormat: "H:i",
    });
 }
+window.logout = function(){
+   alert('Loout me');
+}
